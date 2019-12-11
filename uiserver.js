@@ -30,7 +30,7 @@ app.use(hotMiddleware(compiler))
 
 const UI_API_ENDPOINT=process.env.UI_API_ENDPOINT||'graphql';
 const env={UI_API_ENDPOINT};
-const port=process.env.UI_SERVER_PORT||5000;
+const port=process.env.PORT||5000;
 app.use(express.static('public'));
 const apiProxyTarget = process.env.API_PROXY_TARGET;
 console.log( process.env.API_PROXY_TARGET)
