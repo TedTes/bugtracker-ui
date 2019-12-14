@@ -89,11 +89,10 @@ export default class Page extends React.Component
             cookiepolicy: 'single_host_origin',
             // Request scopes in addition to 'profile' and 'email'
             //scope: 'additional_scope'
-          }).then((res)=>{this.setState(
+          }).then(()=>{this.setState(
               {
                   disabled:false
-                },
-                console.log("what"));
+                });
             });
         } 
     })
