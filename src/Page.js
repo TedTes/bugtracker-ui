@@ -8,6 +8,7 @@ import BugAddNavItem from './BugAddNavItem';
 import Search from './Search.js'
 import SignInNavItem from './SignInNavItem';
 import UserContext from './UserContext';
+import Home from './Home.js'
 
  function NavBar({user,onUserChange})
 {
@@ -88,12 +89,14 @@ export default class Page extends React.Component
             cookiepolicy: 'single_host_origin',
             // Request scopes in addition to 'profile' and 'email'
             //scope: 'additional_scope'
-          }).then(()=>{this.setState(
+          }).then((res)=>{this.setState(
               {
                   disabled:false
-                });
+                },
+                console.log("what"));
             });
-        } })
+        } 
+    })
      const endPoint= window.ENV.UI_AUTH_ENDPOINT;
 const response=await fetch(`${endPoint}/user`,{
     method:'POST',

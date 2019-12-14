@@ -57,7 +57,8 @@ constructor(props)
                   disabled:false
                 });
             });
-        } })
+        }
+    })
      
    // await this.loadData();
   
@@ -153,7 +154,7 @@ render()
         </NavItem>
          <Modal keyboard show={showing} bsSize="sm" onHide={this.hideModal}>
        <Modal.Header closeButton>
-       <Modal.Title>Title</Modal.Title>
+       <Modal.Title>SignIn With Google</Modal.Title>
        </Modal.Header>
        <Modal.Body>
      <Button block bsStyle="primary" 
